@@ -1,7 +1,6 @@
 #DNAC SSH with paramiko
 # coding=utf-8
 import paramiko
-import sys
 
 host = 'IP'
 username = 'maglev' 
