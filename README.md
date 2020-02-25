@@ -6,3 +6,4 @@ The files contain an example for login using SSH on DNA Center and Prime infrast
 All the scripts should be run on the terminal on a device that has python 2 and the required python packages installed.
 You can find the packages needed listed on the file requirement.txt
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/LeCoderCat/SSHCiscoDevices)
