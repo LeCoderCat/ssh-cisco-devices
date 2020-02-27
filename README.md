@@ -54,6 +54,7 @@ assurance-backend          serviceability-656f45df7b-kf56l                      
 assurance-backend          skype-collector-7d6d588cc-6q7jw                          1/1       Running     1          40d       172.31.4.207    192.168.21.18   <none>
 assurance-backend          wirelesscollector-bf99f5f99-jhjjm                        1/1       Running     1          40d       172.31.4.247    192.168.21.18   <none>
 dnacaap                    daas-runtime-85858c9bdf-jk6tn                            1/1       Running     1          40d       172.31.4.240    192.168.21.18   <none>
+<...>
 dnacaap                    dna-event-runtime-6d749f8b9d-ff497                       1/1       Running     1          40d       172.31.4.194    192.168.21.18   <none>
 ndp                        redis-0                                                  2/2       Running     3          40d       172.31.4.249    192.168.21.18   <none>
 ndp                        schemaregistry-5c948f8f8b-q5g5w                          1/1       Running     1          40d       172.31.4.250    192.168.21.18   <none>
@@ -72,26 +73,8 @@ show clock
 exit
 
 WARNING: Unsuccessful login attempts :
-admin    ssh:notty    Thu Feb 27 12:31 - 12:31  (00:00)     10.149.0.52
-admin    ssh:notty    Thu Feb 27 12:30 - 12:30  (00:00)     10.149.0.52
-admin    ssh:notty    Fri Feb 21 05:07 - 05:07  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:06 - 05:06  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:05 - 05:05  (00:00)     64.102.14.237
-admin    ssh:notty    Fri Feb 21 05:02 - 05:02  (00:00)     64.102.14.237
-admin    ssh:notty    Thu Feb 20 22:25 - 22:25  (00:00)     171.71.180.206
-admin    ssh:notty    Thu Feb 20 22:25 - 22:25  (00:00)     171.71.180.206
-admin    ssh:notty    Thu Feb 20 22:25 - 22:25  (00:00)     171.71.180.206
+
+admin    ssh:notty    Thu Feb 20 22:25 - 22:25  (00:00)     192.168.0.1
 --------------------------------------
 css-dna-pi/admin# show clock
 Thu Feb 27 12:52:54 CET 2020
