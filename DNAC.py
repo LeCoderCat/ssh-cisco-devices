@@ -10,9 +10,7 @@ password = 'MAGLEV_PASSWORD'
 command = 'maglev package status \n'
 admin_user = 'USERNAME\n'
 admin_pass = 'PASSWORD\n'
-exit_shell = 'exit \n'
-#command1 = 'magctl appstack status \n'
-
+exit_shell = 'logout\n'
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -21,14 +19,14 @@ print('Logged in DNAC. . .\n')
 remote_conn = client.invoke_shell()
 time.sleep(.005)
 output = remote_conn.recv(65535)
-print output
+print (output)
 
 
 remote_conn.send(command)
 time.sleep(0.5)
 
-#we need a condition because we might need to create a new JWT by inserting GUI creds
-if "maglev-1 [main " in remote_conn.recv(1000):
+#we need a condition because we might need to create a new JWT by inserting GUI user and creds
+if b"maglev-1 [main " in remote_conn.recv(1000):
 	remote_conn.send(exit_shell)
 	time.sleep(0.5)
 else:
@@ -40,6 +38,6 @@ else:
 	time.sleep(0.5)
 
 output = remote_conn.recv(65535)
-print output
+print (output)
 
 remote_conn.transport.close()
